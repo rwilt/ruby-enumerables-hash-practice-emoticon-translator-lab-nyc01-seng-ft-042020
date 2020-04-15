@@ -40,7 +40,7 @@ load_library(library).each do |category, hash_of_values|
 hash_of_values.each do |lang, emoji|
 if emoji == emoticon
   puts "ans is #{load_library(library)[category][:japanese]}"
-else 
+else
   puts
 end
 end
