@@ -43,7 +43,7 @@ if emoji == emoticon
 end
 end
 end
-  return "Sorry, that emoticon was not found"
+  puts "Sorry, that emoticon was not found"
 end
 
 
