@@ -42,6 +42,8 @@ def get_japanese_emoticon(library, emoticon)
 
 value.each do |inner_val|
   p "this is inner_val - #{inner_val}"
+  if inner_val == emoticon
+    p "the match is #{value[inner_val]}"
 end
 end
 end
