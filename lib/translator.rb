@@ -49,6 +49,6 @@ get_japanese_emoticon("./lib/emoticons.yml","(＾ｖ＾)")
 
 def get_english_meaning(library, emoticon)
   load_library(library).each do |k,v|
-  p k
+
 end
 end
