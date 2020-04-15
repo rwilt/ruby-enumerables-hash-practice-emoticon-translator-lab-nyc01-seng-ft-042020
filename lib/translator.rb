@@ -41,7 +41,7 @@ hash_of_values.each do |lang, emoji|
 if emoji == emoticon
   puts "ans is #{load_library(library)[category][:japanese]}"
 else
-  puts
+  puts "Sorry, that emoticon was not found"
 end
 end
 end
