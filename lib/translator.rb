@@ -35,22 +35,14 @@ end
 
 def get_japanese_emoticon(library, emoticon)
 #load the library and iterate though it
-pp library
-load_library(library).each do |k,v|
-    #iterate through the value hash (work on this)
-    #find match using emoticon and return the english verison.
-v.each do |value|
+load_library(library).each do |category, hash_of_values|
 
-value.each do |inner_val|
-  p "this is inner_val - #{inner_val}"
-  if inner_val == emoticon
-    p "the match is #{value[inner_val]}"
-  else p "Sorry, that emoticon was not found"
-  end
+hash_of_values.each do |lang, emoji|
+if emoji == emoticon
+  puts "ans is #{library[category][:japanese]}" 
 end
 end
 end
-  # code goes here
 end
 
 get_japanese_emoticon("./lib/emoticons.yml","(＾ｖ＾)")
