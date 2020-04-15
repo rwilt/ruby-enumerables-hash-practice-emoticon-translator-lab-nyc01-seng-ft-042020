@@ -38,7 +38,7 @@ ans = ''
 load_library(library).each do |category, hash_of_values|
   # iterate through the hash_of_values hash to break it up by language and emotion
 hash_of_values.each do |lang, emoji|
-  # if the emotion in the hash is equal to the parameter passed to us, 
+  # if the emotion in the hash is equal to the parameter passed to us,
   # set our 'ans' variable to the japanese result and return it
   if emoji == emoticon
     ans = "#{load_library(library)[category][:japanese]}"
