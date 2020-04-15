@@ -40,11 +40,9 @@ load_library(library).each do |category, hash_of_values|
 hash_of_values.each do |lang, emoji|
 if emoji == emoticon
   puts "#{load_library(library)[category][:japanese]}"
-
 end
 end
 end
-
   return "Sorry, that emoticon was not found"
 end
 
