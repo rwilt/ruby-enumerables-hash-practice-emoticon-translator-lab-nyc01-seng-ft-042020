@@ -34,17 +34,22 @@ end
 def get_japanese_emoticon(library, emoticon)
   # set up empty string to store my answer result
 ans = ''
-#load the library and iterate though it
+#load the library and iterate though the category and keys (which is a hash)
 load_library(library).each do |category, hash_of_values|
+  # iterate through the hash_of_values hash to break it up by language and emotion
 hash_of_values.each do |lang, emoji|
+  # if the emotion in the hash is equal to the parameter passed to us, 
+  # set our 'ans' variable to the japanese result and return it
   if emoji == emoticon
     ans = "#{load_library(library)[category][:japanese]}"
     return ans
+    # if not, set our 'ans variable to a not found message'
   elsif emoji != emoticon
     ans = "Sorry, that emoticon was not found"
   end
   end
   end
+  #outside of the loop, return the variable
   return ans
 end
 
