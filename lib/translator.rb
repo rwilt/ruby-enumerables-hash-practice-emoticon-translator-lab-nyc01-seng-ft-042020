@@ -40,6 +40,7 @@ def get_japanese_emoticon(library, emoticon)
     #find match using emoticon and return the english verison.
   v.each do |value|
 p "value is #{value}"
+p "emoticon is #{library[:japanese][emoticon]}"
 end
 end
   # code goes here
