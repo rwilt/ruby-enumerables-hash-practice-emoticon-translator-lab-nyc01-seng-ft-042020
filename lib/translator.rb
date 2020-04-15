@@ -62,5 +62,5 @@ def get_english_meaning(library, emoticon)
   end
   end
   end
-  puts ans
+  return ans
 end
