@@ -51,7 +51,15 @@ end
 get_japanese_emoticon("./lib/emoticons.yml","(＾ｖ＾)")
 
 def get_english_meaning(library, emoticon)
-  load_library(library).each do |k,v|
+  load_library(library).each do |category, hash_of_values|
 
-end
+  hash_of_values.each do |lang, emoji|
+  if emoji == emoticon
+    puts "ans is #{load_library(library)[category][:english]}"
+
+  end
+  end
+  end
+
+    return "Sorry, that emoticon was not found"
 end
