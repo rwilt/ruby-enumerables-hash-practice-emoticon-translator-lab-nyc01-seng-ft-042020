@@ -44,13 +44,11 @@ else puts  "Sorry, that emoticon was not found"
 end
 end
 end
-
 end
 
 
 def get_english_meaning(library, emoticon)
   load_library(library).each do |category, hash_of_values|
-
   hash_of_values.each do |lang, emoji|
   if emoji == emoticon
     return "#{load_library(library)[category][:english]}"
@@ -58,5 +56,4 @@ def get_english_meaning(library, emoticon)
   end
   end
   end
-
 end
