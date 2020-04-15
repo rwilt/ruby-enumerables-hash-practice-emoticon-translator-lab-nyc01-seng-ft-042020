@@ -35,6 +35,7 @@ end
 
 def get_japanese_emoticon(library, emoticon)
 #load the library and iterate though it
+pp library
 load_library(library).each do |k,v|
     #iterate through the value hash (work on this)
     #find match using emoticon and return the english verison.
