@@ -48,7 +48,6 @@ end
   return "Sorry, that emoticon was not found"
 end
 
-get_japanese_emoticon("./lib/emoticons.yml","(＾ｖ＾)")
 
 def get_english_meaning(library, emoticon)
   load_library(library).each do |category, hash_of_values|
