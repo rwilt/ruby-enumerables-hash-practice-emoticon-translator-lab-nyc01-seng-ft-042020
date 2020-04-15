@@ -31,8 +31,6 @@ new_hash
 end
 
 
-
-
 def get_japanese_emoticon(library, emoticon)
 #load the library and iterate though it
 ans = ''
