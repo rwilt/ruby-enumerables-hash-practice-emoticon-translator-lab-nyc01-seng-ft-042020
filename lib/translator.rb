@@ -52,7 +52,7 @@ def get_english_meaning(library, emoticon)
 
   hash_of_values.each do |lang, emoji|
   if emoji == emoticon
-    puts "#{{load_library(library)[category][:english]}"
+    puts "#{load_library(library)[category][:english]}"
 
   end
   end
