@@ -32,8 +32,9 @@ end
 
 
 def get_japanese_emoticon(library, emoticon)
-#load the library and iterate though it
+  # set up empty string to store my answer result
 ans = ''
+#load the library and iterate though it
 load_library(library).each do |category, hash_of_values|
 hash_of_values.each do |lang, emoji|
   if emoji == emoticon
