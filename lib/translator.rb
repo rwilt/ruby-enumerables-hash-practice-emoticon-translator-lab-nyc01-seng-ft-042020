@@ -39,9 +39,10 @@ def get_japanese_emoticon(library, emoticon)
     #iterate through the value hash (work on this)
     #find match using emoticon and return the english verison.
   v.each do |value|
-p "value is #{value}"
-p "v is #{v}"
-p "k is ##{k}"
+
+value.each do |inner_val|
+  p "this is inner_val - #{inner_val}"
+end
 end
 end
   # code goes here
