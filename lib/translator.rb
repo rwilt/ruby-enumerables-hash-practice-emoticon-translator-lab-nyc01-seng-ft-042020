@@ -44,6 +44,8 @@ if emoji == emoticon
 end
 end
 end
+
+  return "Sorry, that emoticon was not found"
 end
 
 get_japanese_emoticon("./lib/emoticons.yml","(＾ｖ＾)")
