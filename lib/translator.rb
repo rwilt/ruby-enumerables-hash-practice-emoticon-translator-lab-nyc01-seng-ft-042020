@@ -46,7 +46,7 @@ hash_of_values.each do |lang, emoji|
   end
   end
   end
-  puts ans
+  return ans
 end
 
 
