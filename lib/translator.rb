@@ -41,7 +41,7 @@ def get_japanese_emoticon(library, emoticon)
   v.each do |value|
 p "value is #{value}"
 p "v is #{v}"
-p "k is ##{k}
+p "k is ##{k}"
 end
 end
   # code goes here
