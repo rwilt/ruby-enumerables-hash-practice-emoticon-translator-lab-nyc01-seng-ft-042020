@@ -45,6 +45,7 @@ value.each do |inner_val|
   if inner_val == emoticon
     p "the match is #{value[inner_val]}"
   else p "Sorry, that emoticon was not found"
+  end
 end
 end
 end
